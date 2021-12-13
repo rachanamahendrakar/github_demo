@@ -65,7 +65,6 @@ public class AmazonAutomation {
 				//
 				String comparisionString = "";
 				for(int i=2; i<25; i++) { 
-					//*[@id="HLCXComparisonTable"]/tbody/tr[19]/th/span
 					String xPath = "//*[@id=\"HLCXComparisonTable\"]/tbody/tr[" + i + "]/th/span";
 					if( chromeDriver1.findElements(By.xpath(xPath)).size() > 0 ) {
 							WebElement weightResult = chromeDriver1.findElement(By.xpath(xPath));
